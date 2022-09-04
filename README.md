@@ -1,7 +1,7 @@
 # fps_parser
 Сервис парсинга сайта https://freeproxyupdate.com/
 
-Раз в пять часов сканирует и складывает найденные прокси в файл res.txt 
+Раз в пять часов сканирует и складывает найденные прокси в файл ~/fps_parser/res.txt 
 
 # Установка
 
@@ -12,15 +12,12 @@ sudo apt -y upgrade
 sudo apt install -y python3-pip
 ```
 
-2. Создаем каталог приложения
+2. Создаем каталог приложения и копируем файлы проекта в него
 ```
 md ~/fps_parser
 cd ~/fps_parser
-```
-
-3. Копируем файлы проекта в каталог проекта
-```
-
+wget -O script.sh https://github.com/prog815/fps_parser/raw/main/script.sh
+wget -O obr.py https://github.com/prog815/fps_parser/raw/main/obr.py
 ```
 
 3. Запускаем cron
