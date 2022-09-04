@@ -1,0 +1,28 @@
+# --------------------------------------------------------
+
+Команды для Docker:
+docker build --pull --rm -f "Dockerfile" -t fpsparser:latest .
+docker run -d -p80:5000 --name fpsparser fpsparser
+docker container ls
+docker rm -f fpsparser
+docker exec -it fpsparser /bin/sh
+docker image ls 
+docker image prune
+docker ps -s
+
+# --------------------------------------------------------
+
+Контейнер тестируем здесь:
+http://localhost/
+
+# --------------------------------------------------------
+
+Установка на сервере
+
+sudo apt update
+sudo apt -y upgrade
+sudo apt install -y python3-pip
+
+
+# --------------------------------------------------------
+
